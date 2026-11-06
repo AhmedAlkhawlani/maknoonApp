@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="مكنون">
+  <defs>
+    <radialGradient id="avBg" cx="50%" cy="42%" r="62%">
+      <stop offset="0" stop-color="#12303C"/>
+      <stop offset="0.55" stop-color="#0A141C"/>
+      <stop offset="1" stop-color="#07090D"/>
+    </radialGradient>
+    <linearGradient id="avMark" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.55" stop-color="#38CFFF"/>
+      <stop offset="1" stop-color="#FF4081"/>
+    </linearGradient>
+    <linearGradient id="avShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="avGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="avPearl" x="-250%" y="-250%" width="600%" height="600%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#avBg)"/>
+  <circle cx="256" cy="256" r="250" fill="none" stroke="#00E5FF" stroke-opacity="0.10" stroke-width="1"/>
+
+  <g transform="translate(256 256) scale(0.82) translate(-256 -256)">
+    <path d="M256 30 L446 130 L446 330 C446 396 372 452 256 482 C140 452 66 396 66 330 L66 130 Z"
+          fill="none" stroke="url(#avShield)" stroke-width="7" stroke-linejoin="miter"/>
+    <g filter="url(#avGlow)" fill="none" stroke="url(#avMark)" stroke-width="34"
+       stroke-linecap="butt" stroke-linejoin="miter">
+      <path d="M166 344 L166 172 L238 274"/>
+      <path d="M346 344 L346 172 L274 274"/>
+    </g>
+    <circle cx="256" cy="298" r="24" fill="#FF4081" filter="url(#avPearl)"/>
+  </g>
+</svg>

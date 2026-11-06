@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="شعار مكنون">
+  <defs>
+    <linearGradient id="mkShield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00E5FF" stop-opacity="1"/>
+      <stop offset="1" stop-color="#00E5FF" stop-opacity="0.22"/>
+    </linearGradient>
+    <linearGradient id="mkMark" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#00E5FF"/>
+      <stop offset="0.55" stop-color="#38CFFF"/>
+      <stop offset="1" stop-color="#FF4081"/>
+    </linearGradient>
+    <filter id="mkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="mkPearl" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- الدرع -->
+  <path d="M256 30 L446 130 L446 330 C446 396 372 452 256 482 C140 452 66 396 66 330 L66 130 Z"
+        fill="none" stroke="url(#mkShield)" stroke-width="5" stroke-linejoin="miter"/>
+  <!-- الخط الداخلي -->
+  <path d="M256 72 L414 154 L414 330 C414 384 352 428 256 454 C160 428 98 384 98 330 L98 154 Z"
+        fill="none" stroke="#00E5FF" stroke-opacity="0.26" stroke-width="1.5"/>
+
+  <!-- حرف M يحتضن اللؤلؤة -->
+  <g filter="url(#mkGlow)" fill="none" stroke="url(#mkMark)" stroke-width="32"
+     stroke-linecap="butt" stroke-linejoin="miter">
+    <path d="M170 340 L170 176 L239 274"/>
+    <path d="M342 340 L342 176 L273 274"/>
+  </g>
+
+  <!-- اللؤلؤة -->
+  <circle cx="256" cy="298" r="23" fill="#FF4081" filter="url(#mkPearl)"/>
+  <circle cx="256" cy="298" r="23" fill="none" stroke="#FFD1E0" stroke-opacity="0.7" stroke-width="1.2"/>
+</svg>

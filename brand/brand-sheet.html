@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ورقة هوية مَكْنُون</title>
+<style>
+@font-face{font-family:'PlexAr';src:url('../assets/fonts/plex-ar-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'PlexAr';src:url('../assets/fonts/plex-ar-500.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'PlexAr';src:url('../assets/fonts/plex-ar-700.woff2') format('woff2');font-weight:700;font-display:swap}
+:root{
+  --bg:#07090D;--surface:#0C1219;--line:rgba(0,229,255,.16);--line-soft:rgba(255,255,255,.07);
+  --cyan:#00E5FF;--pink:#FF4081;--text:#E9F1F8;--muted:#93A2B4;--dim:#5D6B7C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'PlexAr',system-ui,sans-serif;line-height:1.8;
+  padding:clamp(24px,5vw,64px);max-width:1080px;margin-inline:auto}
+h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.3;margin-bottom:8px}
+h2{font-size:14px;letter-spacing:.18em;color:var(--cyan);font-weight:500;margin:56px 0 18px;
+   padding-bottom:10px;border-bottom:1px solid var(--line-soft);text-transform:uppercase}
+p{color:var(--muted);font-size:15px}
+.lead{font-size:17px;margin-bottom:8px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.card{border:1px solid var(--line-soft);border-radius:14px;background:var(--surface);padding:22px;
+  display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;min-height:190px}
+.card span{font-size:12px;color:var(--dim)}
+.card img{max-width:120px}
+.card--wide img{max-width:190px}
+.swatch{border-radius:12px;padding:18px;min-height:120px;display:flex;flex-direction:column;justify-content:flex-end;
+  border:1px solid var(--line-soft)}
+.swatch b{font-size:13px;display:block}
+.swatch code{font-size:12px;opacity:.85;direction:ltr;display:block;margin-top:2px}
+.swatch small{font-size:11.5px;opacity:.7;display:block;margin-top:6px}
+.type-row{display:flex;align-items:baseline;gap:18px;padding:14px 0;border-bottom:1px solid var(--line-soft)}
+.type-row b{flex:none;width:110px;font-size:11.5px;color:var(--dim);font-weight:400;direction:ltr}
+.dont{display:grid;gap:14px}
+.dont div{padding:16px 18px;border-radius:10px;border:1px solid rgba(255,64,129,.22);
+  background:rgba(255,64,129,.05);font-size:14px;color:#D8C2CB}
+.dont b{color:#FF9DBB;font-weight:600}
+ul{list-style:none;display:grid;gap:10px}
+li{padding-inline-start:20px;position:relative;font-size:14.5px;color:var(--muted)}
+li::before{content:'';position:absolute;inset-inline-start:0;top:10px;width:7px;height:7px;
+  border-radius:2px;transform:rotate(45deg);background:linear-gradient(135deg,var(--cyan),var(--pink))}
+.foot{margin-top:64px;padding-top:20px;border-top:1px solid var(--line-soft);font-size:12.5px;color:var(--dim)}
+</style>
+</head>
+<body>
+
+<h1>ورقة هوية مَكْنُون</h1>
+<p class="lead">المصدر الوحيد للحقيقة البصرية. أي ملف تصميم يخالف هذه الصفحة يُصحَّح، لا العكس.</p>
+
+<h2>01 / الشعار</h2>
+<div class="grid g3">
+  <div class="card card--wide"><img src="maknoon-mark.svg" alt="الشعار الأساسي"><span>الأساسي — على خلفية داكنة</span></div>
+  <div class="card"><img src="maknoon-avatar-512.png" alt="أفاتار القناة"><span>أفاتار التلجرام ٥١٢</span></div>
+  <div class="card"><img src="maknoon-favicon.svg" alt="الأيقونة الصغيرة" style="max-width:56px"><span>الأيقونة ١٦–٦٤px</span></div>
+</div>
+
+<h2>02 / معنى الرمز</h2>
+<p>
+  <strong>الدرع</strong> = الخزانة التي لا يصل إليها عابث.
+  <strong>حرف M</strong> = مكنون، مرسوم بخطوط مستقيمة لا منحنى واحد.
+  <strong>اللؤلؤة الوردية</strong> = «لؤلؤ مكنون» — وهي الشيء الوحيد المستدير في الشعار، فتُقرأ فوراً.
+  الحرف يحتضن اللؤلؤة ولا يلمسها: هذه هي الفكرة كلها في شكل واحد.
+</p>
+
+<h2>03 / الألوان</h2>
+<div class="grid g2">
+  <div class="swatch" style="background:#07090D;color:#E9F1F8">
+    <b>الخلفية العميقة</b><code>#07090D</code><small>كل الأسطح الأساسية</small>
+  </div>
+  <div class="swatch" style="background:#0C1219;color:#E9F1F8">
+    <b>السطح المرتفع</b><code>#0C1219</code><small>البطاقات والألواح</small>
+  </div>
+  <div class="swatch" style="background:#00E5FF;color:#04121A">
+    <b>السماوي النيون</b><code>#00E5FF</code><small>الأفعال، الروابط، التركيز</small>
+  </div>
+  <div class="swatch" style="background:#FF4081;color:#1A0309">
+    <b>الوردي النيون</b><code>#FF4081</code><small>التحذير، اللؤلؤة، التمييز</small>
+  </div>
+</div>
+<p style="margin-top:14px;font-size:13.5px">
+  قاعدة: السماوي للفعل، والوردي للتحذير أو اللؤلؤة فقط. لا تستخدم الوردي كلون زر أساسي — يفقد معناه.
+</p>
+
+<h2>04 / الخط</h2>
+<div class="type-row"><b>Display / 700</b><span style="font-size:34px;font-weight:700">برمجيات أصيلة</span></div>
+<div class="type-row"><b>Title / 700</b><span style="font-size:22px;font-weight:700">التطبيقات الرسمية</span></div>
+<div class="type-row"><b>Body / 400</b><span style="font-size:15.5px">نصنع تطبيقات أندرويد أصلية بلا إعلانات ولا تتبّع.</span></div>
+<div class="type-row"><b>Label / 500</b><span style="font-size:11px;letter-spacing:.22em;color:#00E5FF;direction:ltr">MAKNOON // SOFTWARE</span></div>
+<p style="margin-top:14px;font-size:13.5px">
+  العائلة: <strong>IBM Plex Sans Arabic</strong> — مستضافة داخل المشروع، لا تُحمَّل من أي خادم خارجي.
+  هذا ليس تفضيلاً جمالياً: موقع يعد بعدم التتبّع ثم يستدعي خطوط Google يهدم وعده من أول تحميل.
+</p>
+
+<h2>05 / المساحة الآمنة</h2>
+<div class="card" style="min-height:220px;position:relative">
+  <div style="padding:34px;border:1px dashed rgba(0,229,255,.3);border-radius:10px">
+    <img src="maknoon-mark.svg" alt="" style="max-width:110px">
+  </div>
+  <span>لا يقترب أي عنصر من الشعار أقل من نصف عرض الدرع</span>
+</div>
+
+<h2>06 / ما لا يُفعل</h2>
+<div class="dont">
+  <div><b>لا تُلوّن الشعار بغير تدرّج الهوية.</b> السماوي→الوردي هو التوقيع؛ تغييره يمحو التعرّف.</div>
+  <div><b>لا تضع الشعار على خلفية ذهبية أو فاتحة.</b> الهوية داكنة بطبعها؛ النسخة الأحادية للأسطح الفاتحة فقط.</div>
+  <div><b>لا تُدوّر اللؤلؤة ولا تفصلها عن الحرف.</b> احتضان الحرف لها هو الفكرة، لا زخرفة إضافية.</div>
+  <div><b>لا تخلط الشعار الذهبي القديم بهذه الهوية.</b> الذهبي يخصّ تطبيق دفتر مكنون داخل التطبيق، لا المنظومة.</div>
+</div>
+
+<h2>07 / أين تُستخدم كل نسخة</h2>
+<ul>
+  <li><code>maknoon-mark.svg</code> — الموقع، العروض، أي مقاس كبير.</li>
+  <li><code>maknoon-mark-mono.svg</code> — الفواتير، الطباعة، الخلفيات الفاتحة (يأخذ لون النص).</li>
+  <li><code>maknoon-avatar-512.png</code> — أفاتار التلجرام وحسابات التواصل.</li>
+  <li><code>maknoon-favicon.svg</code> — أيقونة المتصفح فقط؛ لا تكبّرها فوق ٦٤px.</li>
+  <li><code>maknoon-og.png</code> — بطاقة المشاركة ١٢٠٠×٦٣٠.</li>
+</ul>
+
+<p class="foot">مَكْنُون — برمجيات أصيلة · أمان محلي · استقلال رقمي تام</p>
+
+</body>
+</html>
